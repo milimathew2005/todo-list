@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #c299f2, #e8d1ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #4e2a84;
+}
+
+.App {
+  text-align: center;
+}
+
+main {
+  background: #6c1e8f;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin: 60px auto;
+  width: 420px;
+  padding: 40px 24px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #ff8c42, #ff5c33);
+  padding: 12px 18px;
+  border-radius: 10px;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card:nth-child(4n + 1) {
+  background: linear-gradient(90deg, #2a1fc6, #8178f7);
+}
+
+.card:nth-child(4n + 2) {
+  background: linear-gradient(90deg, #cd5424, #e5b328);
+}
+
+.card:nth-child(4n + 3) {
+  background: linear-gradient(90deg, #d0eafc, #a8c2ec);
+}
+
+button {
+  background-color: #ffffff;
+  color: #6c1e8f;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e8d1ff;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.task-input {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  margin-right: 12px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
